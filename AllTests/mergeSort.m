@@ -1,4 +1,4 @@
-function y = merge(x)
+function y = mergeSort(x)
 %This function recursively performs the merge sort
 
 n = length(x);                                                      %How long is the vector?
@@ -10,8 +10,8 @@ end
 
 n_2 = int32(n/2);                                                   %Halve the vector (cast to int)
 
-x1 = merge(x(1:n_2));                                               %pass the first half of the vector into the fucntiuon recursively
-x2 = merge(x(n_2+1:n));                                             %pass the second half of the vector into the fucntiuon recursively
+x1 = mergeSort(x(1:n_2));                                               %pass the first half of the vector into the fucntiuon recursively
+x2 = mergeSort(x(n_2+1:n));                                             %pass the second half of the vector into the fucntiuon recursively
 
 n1 = length(x1);                                                    %obtain the length of x1
 n2 = length(x2);                                                    %obtain the length of x2
