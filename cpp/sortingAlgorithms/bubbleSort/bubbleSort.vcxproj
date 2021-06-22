@@ -85,7 +85,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\bubbleSort.cpp" />
+    <ClCompile Include="src\bubbleSortTest.cpp" />
+    <ClCompile Include="src\supportingFiles\bubbleSort.cpp" />
+    <ClCompile Include="src\supportingFiles\generateArray.cpp" />
+    <ClCompile Include="src\supportingFiles\printArray.cpp" />
+    <ClCompile Include="src\supportingFiles\swap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\supportingFiles\bubbleSort.h" />
+    <ClInclude Include="src\supportingFiles\generateArray.h" />
+    <ClInclude Include="src\supportingFiles\printArray.h" />
+    <ClInclude Include="src\supportingFiles\swap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
