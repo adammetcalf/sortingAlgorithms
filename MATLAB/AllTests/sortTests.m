@@ -3,7 +3,7 @@ clear;
 close all;
 
 %size of vector for sorting
-n = 10000;            
+n = 1000;            
 
 %Create array (range 0-200000, n elements in array)
 unSortedArray = randi(200000,n,1);
